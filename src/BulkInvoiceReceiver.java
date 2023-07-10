@@ -37,6 +37,8 @@ public class BulkInvoiceReceiver {
             ServiceService service = new ServiceService(new URL("http://localhost:8000/ivc/16/serviceBL?wsdl"), QName.valueOf("{http://services.irisl.addon.ivc.ngs/}ServiceService"));
             servicePort = service.getServicePort();
 
+            
+
         } catch (MalformedURLException e) {
             e.printStackTrace();
         } catch (Exception e) {
